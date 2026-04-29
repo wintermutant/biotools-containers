@@ -35,7 +35,7 @@ RUN ruby --version && hmmsearch -h | head -2 && parallel --version | head -1
 WORKDIR /opt
 
 # Clone kofam_scan repository
-RUN git clone https://github.com/takaram/kofam_scan.git && \
+RUN git clone https://github.com/wintermutant/kofam_scan_bsp && \
     cd kofam_scan && \
     chmod +x exec_annotation
 
